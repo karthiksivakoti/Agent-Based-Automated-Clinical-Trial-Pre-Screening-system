@@ -1,4 +1,4 @@
-# 🏥 Clinical Trial Recruitment Automation using Agentic AI
+# 🏥 Clinical Trial Recruitment Automation
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?style=for-the-badge&logo=Python&logoColor=white)](https://www.python.org/)
 [![BigQuery](https://img.shields.io/badge/BigQuery-%234285F4.svg?style=for-the-badge&logo=Google-Cloud&logoColor=white)](https://cloud.google.com/bigquery)
@@ -107,7 +107,11 @@ Example natural language criteria:
 
 ## 🔬 Sample Trials
 
-The system was tested with simplified protocols including:
+The system was tested with simplified protocols:
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### CardioHealth Study
 A cardiovascular trial with inclusion criteria for:
@@ -116,30 +120,73 @@ A cardiovascular trial with inclusion criteria for:
 - eGFR > 10
 - Non-smoking status
 
+**Exclusion Criteria:**
+- Hemoglobin A1c ≥ 12.0
+- End-stage renal disease (ICD-9: 585.6)
+- Recent participation in other trials
+
+</td>
+<td width="50%" valign="top">
+
 ### Breast Cancer Adjuvant Therapy Trial
 An oncology trial targeting:
 - Age < 85
 - Breast cancer diagnosis (ICD-9: 174)
 - Without severe kidney disease
 
-## 🚀 Getting Started
+**Key Considerations:**
+- Primary focus on early-stage disease
+- Evaluates novel adjuvant therapy
+- Excludes patients with renal complications
 
-### Prerequisites
-- Python 3.9+
-- Google Cloud account with BigQuery access
-- MIMIC-III dataset access credentials
-- OpenAI API key
+</td>
+</tr>
+</table>
 
-### Installation
+## 🔮 Future Directions
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/clinical-trial-automation.git
-cd clinical-trial-automation
+- **Protocol Parsing**: Develop robust PDF parsing for real-world protocol documents
+- **Advanced NLP**: Implement specialized NLP pipelines for entity extraction from clinical notes
+- **Longitudinal Analysis**: Incorporate time-series data analysis for comprehensive patient assessment
+- **Uncertainty Quantification**: Develop more sophisticated methods for managing and communicating uncertainty
+- **Domain-Specific LLMs**: Train or fine-tune models specifically for clinical trial criteria evaluation
+- **Knowledge Graph Integration**: Represent medical knowledge and patient data as graphs for enhanced reasoning
 
-# Install dependencies
-pip install -r requirements.txt
+## 📝 Citation
 
-# Set up environment variables
-export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials.json"
-export OPENAI_API_KEY="your-openai-api-key"
+If you use this work, please cite:
+@misc{sivakoti2025clinical,
+author = {Sivakoti, Karthik},
+title = {Agent-Based Automated Clinical Trial Pre-Screening System with LLM Integration},
+year = {2025},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished = {\url{https://github.com/yourusername/clinical-trial-automation}}
+}
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### MIMIC-III Database
+
+This project uses data from the MIMIC-III database:
+
+- MIMIC-III, a freely accessible critical care database. Johnson AEW, Pollard TJ, Shen L, Lehman L, Feng M, Ghassemi M, Moody B, Szolovits P, Celi LA, and Mark RG. Scientific Data (2016). DOI: 10.1038/sdata.2016.35.
+
+The use of the MIMIC-III database is governed by a data use agreement which requires:
+1. Training in human research subject protection (e.g., CITI certification)
+2. Agreement to the PhysioNet Credentialed Health Data License
+3. Proper citation of the data source in any publication or research
+
+For detailed information on obtaining access to MIMIC-III, please visit: [https://mimic.mit.edu/](https://mimic.mit.edu/)
+
+## 🙏 Acknowledgments
+
+- MIMIC-III database and PhysioNet for providing clinical data
+- Google Cloud BigQuery for powerful data processing
+- OpenAI for GPT-4o access
+
+---
+
+Made with ❤️ for improving clinical trial recruitment and accelerating medical research.
