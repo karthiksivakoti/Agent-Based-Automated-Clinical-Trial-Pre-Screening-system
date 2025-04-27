@@ -10,7 +10,7 @@
 An agent-based system for automating clinical trial pre-screening using Electronic Health Records (EHR) and Large Language Models (LLMs). Built with Python, BigQuery, OpenAI GPT-4o, and the MIMIC-III clinical database.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/clinical-trial-automation/main/images/workflow_diagram.png" alt="Agent Workflow Diagram" width="800"/>
+  <img src="Agent_workflow_diagram.png" alt="Agent Workflow Diagram" width="800"/>
   <br>
   <em>Agent-Based System Workflow Architecture</em>
 </p>
