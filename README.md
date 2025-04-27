@@ -28,7 +28,7 @@ Clinical trial recruitment is a critical bottleneck in medical research, with pa
 ## 🔍 The Challenge
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/clinical-trial-automation/main/images/recruitment_bottleneck.png" alt="Clinical Trial Recruitment Bottleneck" width="600"/>
+  <img src="Clinical_trial_bottleneck.png" alt="Clinical Trial Recruitment Bottleneck" width="600"/>
 </p>
 
 Clinical trial recruitment faces significant challenges:
@@ -76,22 +76,76 @@ Our agent-based system comprises:
 
 ## 📈 Results & Analysis
 
-Our prototype demonstrates feasibility while highlighting important challenges:
+Our prototype demonstrates the feasibility of an agent-based approach to clinical trial pre-screening while highlighting important challenges in the domain.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/clinical-trial-automation/main/images/eligibility_pie_charts.png" alt="Eligibility Distribution" width="700"/>
+  <img src="Eligibility_status_by_trial.png" alt="Eligibility Distribution" width="700"/>
   <br>
   <em>Eligibility Distribution Across Trial Types</em>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/clinical-trial-automation/main/images/criteria_failure_analysis.png" alt="Criteria Failure Analysis" width="600"/>
+  <img src="Frequency_criteria_ineligibility.png" alt="Criteria Failure Analysis" width="600"/>
   <br>
   <em>Frequency of Criteria Leading to Ineligibility</em>
 </p>
 
-The system effectively processes both structured criteria (age, lab values, diagnosis codes) and makes reasonable assessments of natural language criteria when sufficient information is available in clinical notes.
+### AI Explainability
 
+A key strength of our system is its ability to provide detailed, transparent rationales for every eligibility decision. This explainability is critical for clinical applications where understanding the "why" behind recommendations is as important as the recommendations themselves.
+
+For each patient, the system generates a comprehensive breakdown showing:
+- The final eligibility assessment
+- Each criterion that was evaluated
+- Whether the patient passed or failed each specific criterion
+- The exact reason for each decision
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<p align="center">
+  <img src="Rationale_Eligible_Trial_Cardio_01.png" alt="Patient 20 - CardioHealth Trial - Eligible" width="100%"/>
+  <br>
+  <em>Patient 20: Eligible for CardioHealth Trial</em>
+</p>
+</td>
+<td width="50%" valign="top">
+<p align="center">
+  <img src="Rationale_Eligible_Trial_Cardio_01.png" alt="Patient 23 - CardioHealth Trial - Ineligible" width="100%"/>
+  <br>
+  <em>Patient 23: Ineligible for CardioHealth Trial</em>
+</p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<p align="center">
+  <img src="Rationale_Eligible_Trial_Onco_01.png" alt="Patient 2297 - Oncology Trial - Eligible" width="100%"/>
+  <br>
+  <em>Patient 2297: Eligible for Oncology Trial</em>
+</p>
+</td>
+<td width="50%" valign="top">
+<p align="center">
+  <img src="Rationale_Ineligible_Trial_Onco_01.png" alt="Patient 20 - Oncology Trial - Ineligible" width="100%"/>
+  <br>
+  <em>Patient 20: Ineligible for Oncology Trial</em>
+</p>
+</td>
+</tr>
+</table>
+
+These detailed rationales provide several benefits:
+
+- **Clinical Trust**: Physicians and clinical trial coordinators can verify the accuracy of screening decisions
+- **Process Transparency**: The decision path is fully visible, not a "black box" algorithm
+- **Error Detection**: Inconsistencies or data quality issues become immediately apparent
+- **Educational Value**: The system demonstrates how specific criteria impact eligibility
+- **Audit Trail**: Decisions can be reviewed and validated during regulatory inspection
+
+The system effectively processes both structured criteria (age, lab values, diagnosis codes) and makes reasonable assessments of natural language criteria when sufficient information is available in clinical notes. By clearly labeling uncertain determinations, the system acknowledges its limitations and identifies cases requiring human review.
+
+This approach to explainable AI is essential for clinical applications where automated systems must augment rather than replace human decision-making, ensuring that technology enhances rather than obscures the recruitment process.
 ## 🧠 LLM Integration
 
 The system leverages OpenAI's GPT-4o to:
