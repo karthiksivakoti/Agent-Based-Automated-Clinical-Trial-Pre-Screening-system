@@ -111,7 +111,7 @@ For each patient, the system generates a comprehensive breakdown showing:
 </td>
 <td width="50%" valign="top">
 <p align="center">
-  <img src="Rationale_Eligible_Trial_Cardio_01.png" width="100%"/>
+  <img src="Rationale_Ineligible_Trial_Cardio_01.png" width="100%"/>
   <br>
   <em>Patient 23: Ineligible for CardioHealth Trial</em>
 </p>
