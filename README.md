@@ -152,18 +152,6 @@ An oncology trial targeting:
 - **Domain-Specific LLMs**: Train or fine-tune models specifically for clinical trial criteria evaluation
 - **Knowledge Graph Integration**: Represent medical knowledge and patient data as graphs for enhanced reasoning
 
-## 📝 Citation
-
-If you use this work, please cite:
-@misc{sivakoti2025clinical,
-author = {Sivakoti, Karthik},
-title = {Agent-Based Automated Clinical Trial Pre-Screening System with LLM Integration},
-year = {2025},
-publisher = {GitHub},
-journal = {GitHub repository},
-howpublished = {\url{https://github.com/yourusername/clinical-trial-automation}}
-}
-
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -189,4 +177,4 @@ For detailed information on obtaining access to MIMIC-III, please visit: [https:
 
 ---
 
-Made with ❤️ for improving clinical trial recruitment and accelerating medical research.
+Made with ❤️ by Karthik Sivakoti for improving clinical trial recruitment and accelerating medical research.
