@@ -52,30 +52,59 @@ Clinical trial recruitment faces significant challenges:
 
 ## 🛠️ System Architecture
 
-Our agent-based system comprises:
+Our agent-based system comprises specialized components working together:
+
+<table>
+<tr>
+<th colspan="3">System Components</th>
+</tr>
+<tr>
+<td width="30%" valign="top">
 
 ### 🤖 Orchestrator Agent
-- Manages the end-to-end workflow
+- Manages end-to-end workflow
 - Coordinates specialized tools
-- Aggregates results into final eligibility assessment
+- Aggregates final results
+- Provides unified interface
+
+</td>
+<td width="70%" colspan="2">
 
 ### 🔎 Specialized Tools
 
+<table>
+<tr>
+<td width="33%" valign="top">
+
 #### 1. Patient Data Retriever
-- Queries MIMIC-III database via BigQuery
-- Retrieves demographics, diagnoses, medications, lab values, and clinical notes
-- Processes and structures heterogeneous patient data
+- Queries MIMIC-III via BigQuery
+- Retrieves demographics, diagnoses, medications, labs, and notes
+- Processes heterogeneous data
+
+</td>
+<td width="33%" valign="top">
 
 #### 2. Protocol Parser
-- Interprets clinical trial protocols
-- Extracts inclusion and exclusion criteria
-- Categorizes criteria by type (age, diagnosis, lab, natural language)
+- Interprets trial protocols
+- Extracts inclusion/exclusion criteria
+- Categorizes by criterion type
+
+</td>
+<td width="33%" valign="top">
 
 #### 3. Eligibility Comparer
-- Evaluates patient data against each criterion
-- Handles structured criteria with programmatic logic
-- Processes natural language criteria using LLM (GPT-4o)
-- Manages uncertainty with configurable decision rules
+- Evaluates each criterion
+- Handles structured & NL criteria
+- Uses LLM for unstructured data
+- Manages uncertainty
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
 
 ## 📊 Key Features
 
