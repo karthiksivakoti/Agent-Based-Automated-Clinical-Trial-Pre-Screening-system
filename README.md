@@ -17,13 +17,24 @@ An agent-based system for automating clinical trial pre-screening using Electron
 
 ## 🌟 Overview
 
-Clinical trial recruitment is a critical bottleneck in medical research, with patient screening being particularly time-consuming and resource-intensive. This project demonstrates an agent-based approach to automate the pre-screening process by:
+Clinical trial recruitment is a critical bottleneck in medical research, with patient screening being particularly time-consuming and resource-intensive. This project demonstrates an agent-based approach to automate the pre-screening process, combining structured data analysis with LLM-powered natural language processing.
 
-- Retrieving and processing patient data from electronic health records
-- Parsing structured and unstructured clinical trial protocols
-- Evaluating eligibility against both structured criteria (age, lab values, diagnosis codes) and natural language criteria
-- Using LLMs to interpret unstructured data in clinical notes
-- Providing detailed eligibility assessments with explanations
+<p align="center">
+  <img src="Rationale_Eligible_Trial_Cardio_01.png" alt="Patient Eligibility Example" width="600"/>
+  <br>
+  <em>Transparent Eligibility Assessment with Criterion-Level Explainability</em>
+</p>
+
+Our system delivers:
+
+- **Complete transparency**: Every eligibility decision includes detailed criterion-by-criterion rationales
+- **Hybrid intelligence**: Combines rule-based logic with LLM capabilities for comprehensive assessment
+- **Clinical trust**: Physicians can verify exactly why patients are deemed eligible or ineligible
+- **Efficient screening**: Automatically retrieves and processes patient data from electronic health records
+- **Unparalleled explainability**: No "black box" decisions—each result shows the exact reasoning path
+
+By automating this labor-intensive process while maintaining full transparency, our system has the potential to significantly accelerate trial recruitment while enhancing clinical confidence in the screening results.
+
 
 ## 🔍 The Challenge
 
