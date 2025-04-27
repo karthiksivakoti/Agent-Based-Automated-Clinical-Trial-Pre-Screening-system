@@ -59,7 +59,7 @@ Our agent-based system comprises specialized components working together:
 <th colspan="3">System Components</th>
 </tr>
 <tr>
-<td width="30%" valign="top">
+<td width="50%" valign="top">
 
 ### 🤖 Orchestrator Agent
 - Manages end-to-end workflow
@@ -68,13 +68,13 @@ Our agent-based system comprises specialized components working together:
 - Provides unified interface
 
 </td>
-<td width="70%" colspan="2">
+<td width="50%" colspan="2">
 
 ### 🔎 Specialized Tools
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="26%" valign="top">
 
 #### 1. Patient Data Retriever
 - Queries MIMIC-III via BigQuery
@@ -82,7 +82,7 @@ Our agent-based system comprises specialized components working together:
 - Processes heterogeneous data
 
 </td>
-<td width="33%" valign="top">
+<td width="26%" valign="top">
 
 #### 2. Protocol Parser
 - Interprets trial protocols
@@ -90,7 +90,7 @@ Our agent-based system comprises specialized components working together:
 - Categorizes by criterion type
 
 </td>
-<td width="33%" valign="top">
+<td width="26%" valign="top">
 
 #### 3. Eligibility Comparer
 - Evaluates each criterion
