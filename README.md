@@ -104,14 +104,14 @@ For each patient, the system generates a comprehensive breakdown showing:
 <tr>
 <td width="50%" valign="top">
 <p align="center">
-  <img src="Rationale_Eligible_Trial_Cardio_01.png" alt="Patient 20 - CardioHealth Trial - Eligible" width="100%"/>
+  <img src="Rationale_Eligible_Trial_Cardio_01.png" width="100%"/>
   <br>
   <em>Patient 20: Eligible for CardioHealth Trial</em>
 </p>
 </td>
 <td width="50%" valign="top">
 <p align="center">
-  <img src="Rationale_Eligible_Trial_Cardio_01.png" alt="Patient 23 - CardioHealth Trial - Ineligible" width="100%"/>
+  <img src="Rationale_Eligible_Trial_Cardio_01.png" width="100%"/>
   <br>
   <em>Patient 23: Ineligible for CardioHealth Trial</em>
 </p>
@@ -120,14 +120,14 @@ For each patient, the system generates a comprehensive breakdown showing:
 <tr>
 <td width="50%" valign="top">
 <p align="center">
-  <img src="Rationale_Eligible_Trial_Onco_01.png" alt="Patient 2297 - Oncology Trial - Eligible" width="100%"/>
+  <img src="Rationale_Eligible_Trial_Onco_01.png" width="100%"/>
   <br>
   <em>Patient 2297: Eligible for Oncology Trial</em>
 </p>
 </td>
 <td width="50%" valign="top">
 <p align="center">
-  <img src="Rationale_Ineligible_Trial_Onco_01.png" alt="Patient 20 - Oncology Trial - Ineligible" width="100%"/>
+  <img src="Rationale_Ineligible_Trial_Onco_01.png" width="100%"/>
   <br>
   <em>Patient 20: Ineligible for Oncology Trial</em>
 </p>
