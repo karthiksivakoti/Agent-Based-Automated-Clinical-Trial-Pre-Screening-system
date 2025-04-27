@@ -1,4 +1,4 @@
-# 🏥 Clinical Trial Recruitment Automation
+# 🏥 Agentic AI based Clinical Trial Recruitment Automation
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?style=for-the-badge&logo=Python&logoColor=white)](https://www.python.org/)
 [![BigQuery](https://img.shields.io/badge/BigQuery-%234285F4.svg?style=for-the-badge&logo=Google-Cloud&logoColor=white)](https://cloud.google.com/bigquery)
